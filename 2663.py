@@ -1,11 +1,11 @@
 def cases():
-    loops=int(input())
+    loops=int(raw_input())
     i=0
     while i<loops:
         insertNcompare()
         i=i+1
 def insertNcompare():
-    numbers=input()
+    numbers=raw_input()
     numbers=numbers.split()
     a=int(numbers[0])
     b=int(numbers[1])
