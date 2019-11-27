@@ -1,16 +1,12 @@
 def cases():
-    loops=int(raw_input())
-    i=0
-    while i<loops:
+    loops=int(input())
+    for i in range(loops):
         insertNcompare()
-        i=i+1
 def insertNcompare():
-    numbers=raw_input()
+    numbers=input()
     numbers=numbers.split()
-    a=int(numbers[0])
-    b=int(numbers[1])
     count=0
-    for i in range(a,b+1):
+    for i in range(int(numbers[0]),int(numbers[1])+1):
         growing=str(i)
         first=growing[0]
         last=growing[len(growing)-1]
@@ -20,7 +16,9 @@ def insertNcompare():
         grow=""
         grow=grow.join(grow_ing)
         if growing==grow and first!=last:
-            count=count+1
+            count+=1
+        if len(growing)==1:
+            count+=1
     print(count)
 
 cases()
