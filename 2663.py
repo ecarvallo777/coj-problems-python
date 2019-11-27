@@ -1,9 +1,8 @@
-def cases():
-    loops=int(input())
+    loops=int(raw_input())
     for i in range(loops):
         insertNcompare()
 def insertNcompare():
-    numbers=input()
+    numbers=raw_input()
     numbers=numbers.split()
     count=0
     for i in range(int(numbers[0]),int(numbers[1])+1):
