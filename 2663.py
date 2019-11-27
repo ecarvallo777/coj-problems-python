@@ -1,6 +1,3 @@
-loops=int(raw_input())
-for i in range(loops):
-    insertNcompare()
 def insertNcompare():
     numbers=raw_input()
     numbers=numbers.split()
@@ -20,4 +17,6 @@ def insertNcompare():
             count=count+1
     print(count)
 
-cases()
+loops=int(raw_input())
+for i in range(loops):
+    insertNcompare()
